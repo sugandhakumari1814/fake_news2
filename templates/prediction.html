@@ -30,13 +30,18 @@
       color: white;
       background-color: rgb(236, 44, 166);
     }
+
     .command {
-            font-size: 14px;
-            background-color: rgb(238, 207, 226);
-            padding: 5px;
-            border-radius: 5px;
-            border: 2px solid magenta;
-        }
+      font-size: 14px;
+      background-color: rgb(238, 207, 226);
+      padding: 5px;
+      border-radius: 5px;
+      border: 2px solid magenta;
+    }
+    .size{
+      font-size: xx-large;
+      color: magenta;
+    }
   </style>
 </head>
 
@@ -64,9 +69,11 @@
       <div class="flex flex-col text-center w-full mb-20">
         <h2 class="text-xs text-pink-500 tracking-widest font-medium title-font mb-1">Using Machine Learning</h2>
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Verify Your News</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">You can paste a piece of text and examine its similarity to our collection of true vs. false news articles, or to news from four different types/genre. Enjoy testing!</p>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">You can paste a piece of text and examine its similarity
+          to our collection of true vs. false news articles, or to news from four different types/genre. Enjoy testing!
+        </p>
         <br>
-        <p><b>{{prediction_text}}</b></p>
+        <p class="size text-pink-900"><b>{{prediction_text}}</b></p>
       </div>
       <div class="centre">
         <form action="/prediction" method="POST">
