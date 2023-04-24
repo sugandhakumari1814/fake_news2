@@ -29,8 +29,14 @@
       font-size: 18px;
       color: white;
       background-color: rgb(236, 44, 166);
-      ;
     }
+    .command {
+            font-size: 14px;
+            background-color: rgb(238, 207, 226);
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid magenta;
+        }
   </style>
 </head>
 
@@ -66,7 +72,7 @@
         <form action="/prediction" method="POST">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Enter your news!!</label>
-            <input type="text" class="form-control" id="news" name="news" aria-describedby="emailHelp">
+            <input type="text" class="command form-control" id="news" name="news" aria-describedby="emailHelp">
           </div>
           <button type="submit" class="bg-pink-500 btn btn-primary">Submit</button>
         </form>
