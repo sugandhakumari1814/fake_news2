@@ -20,6 +20,14 @@ def prediction():
     else:
         return render_template("prediction.html")
 
+@app.route('/method1')
+def method1():
+    return render_template("method1.html")
+
+
+@app.route('/method2')
+def method2():
+    return render_template("method2.html")
 
 
 if __name__ == '__main__':
