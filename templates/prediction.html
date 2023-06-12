@@ -76,12 +76,14 @@
         <p class="size text-pink-900"><b>{{prediction_text}}</b></p>
       </div>
       <div class="centre">
-        <form action="/prediction" method="POST">
+        <form autocomplete="false" action="/prediction" method="POST">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Enter your news!!</label>
-            <input type="text" class="command form-control" id="news" name="news" aria-describedby="emailHelp">
+            <input autocomplete="false" type="text" class="command form-control" id="news" name="news" aria-describedby="emailHelp">
           </div>
-          <button type="submit" class="bg-pink-500 btn btn-primary">Submit</button>
+          <button type="submit" class="bg-pink-500 btn hover:bg-pink-600">Submit</button>
+
+      
         </form>
       </div>
     </div>
